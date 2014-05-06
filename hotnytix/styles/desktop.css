@@ -1,0 +1,424 @@
+		
+		@charset UTF-8
+		@import "tabs.css"
+		@import "accord.css"
+		
+		/* INDEX:
+		 
+		 * generic classes
+		 * fonts
+		 * animations
+		 * html
+		 * header & nav
+		 * slideshow
+		 * main section
+		 * controls/input
+		 * misc */
+		
+		/* color guide:
+		 * dark grey ... #555
+		 * light grey ... #222
+		 * pale cyan ... #82f2ea
+		 * pale blue ... #5ac2e8
+		 */
+		
+		
+		/*generic classesz*/
+
+		.hidden { display: none; }
+		
+		.center {
+			
+			display: block;
+			margin: 0 auto;
+			
+		}
+		
+		.centerVert {
+            
+	        display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+	        display: -moz-box;      /* OLD: Firefox (buggy) */ 
+	        display: -ms-flexbox;   /* MID: IE 10 */
+	        display: -webkit-flex;  /* NEW, Chrome 21+ */
+	        display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+	            
+	        -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+	        -ms-flex-align: center; /* You know the drill now… */
+	        -webkit-align-items: center;
+	        align-items: center;
+	            
+	        -webkit-box-pack: center; -moz-box-pack: center; 
+	        -ms-flex-pack: center; 
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	            
+	        margin: 0;
+	        height: 100%;
+	        width: 100% /* needed for Firefox */
+        
+		}
+		
+		.pointer { cursor: pointer; }
+		
+	/*fontz*/
+		
+		@font-face {
+			font-family: 'negotiate_free';
+			src: url('../assets/negotiate_free.woff');
+		}
+		
+		.negotiateFont {
+			
+			font-family: 'negotiate_free';
+			color: white;
+			font-size: 16pt;
+			
+		}
+		
+	/*animationsz*/	
+		
+		@keyframes crawl {
+	
+			0% { left: 10px; }
+			100% { left: -500px; }
+			
+		}
+		
+		@-moz-keyframes crawl {
+		    
+			0% { left: 10px; }
+			100% { left: -500px; }
+			
+		}
+		
+		@-webkit-keyframes crawl {
+		    
+			0% { left: 10px; }
+			100% { left: -500px; }
+			
+		}
+		
+		@-o-keyframes crawl {
+		    
+			0% { left: 10px; }
+			100% { left: -500px; }
+			
+		}
+		
+		@-ms-keyframes crawl {
+		    
+			0% { left: 10px; }
+			100% { left: -500px; }
+			
+		}
+		
+		@keyframes reveal {
+			
+			0% { top: 0px; }
+			70% {top: 0px; }
+			100% { top: -100px; }
+		}
+		
+		@-moz-keyframes reveal {
+		    
+			0% { top: 0px; }
+			70% {top: 0px; }
+			100% { top: -100px; }
+			
+		}
+		
+		@-webkit-keyframes reveal {
+		    
+			0% { top: 0px; }
+			70% {top: 0px; }
+			100% { top: -100px; }
+		
+		}
+		
+		@-o-keyframes reveal {
+		    
+			0% { top: 0px; }
+			70% {top: 0px; }
+			100% { top: -100px; }
+		
+		}
+		
+		@-ms-keyframes reveal {
+		    
+			0% { top: 0px; }
+			70% {top: 0px; }
+			100% { top: -100px; } 
+			
+		}
+		
+	/*html stylez*/
+				
+		body, html {
+			
+			width: 100%;
+			height: 100%;
+			
+			margin: 0px;
+			padding: 0px;
+	
+		}
+		
+		body {
+			
+			background-image: url('http://stillsound.files.wordpress.com/2012/04/outer-space-stars.jpeg');
+			
+		}
+
+		
+	/* header and nav stylez */
+		
+		header {
+			
+			position: fixed;
+			width: 100%;
+			height: 80px;
+			z-index: 1;
+			
+			top: -100px;
+			
+			background-image: url('../assets/hotnytix_logo.png');
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			
+			padding: 20px;
+			
+			-webkit-animation: reveal 1s;
+  			-moz-animation: reveal 1s;
+  			-o-animation: reveal 1s;
+  			-ms-animation: reveal 1s;
+			animation: reveal 1s;
+			
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+
+		}
+		
+		header:hover { top: 0px; }
+		
+		nav {
+			
+			position: absolute;
+
+			bottom: 20px;
+			left: 515px;
+			
+		}
+
+	/*slideshow stylez*/
+		
+		#slideshow {
+			
+			position: fixed;
+			width: auto;
+			
+			height: 370px;
+			
+			background-color: transparent;
+			z-index: 0;
+			
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			white-space: nowrap;
+			
+			}
+			
+		.slideshowImg {
+			
+			height: 360px;
+			width: auto;
+
+		}
+		
+		#slideshowPosition { 
+			
+			cursor: pointer; 
+			position: relative; 
+			bottom: 30px; 
+			opacity: 0.5; 
+			transition: 0.3s; 
+			-webkit-transition: 0.3s;
+		
+		}
+		
+		#slideshowPosition:active, 
+		#slideshowPosition:hover { 
+			
+			opacity: 1; 
+			bottom: 35px; 
+			
+		}
+		
+		.imgwrapper {
+	
+			width: 100%;
+			height: 100%;
+	
+		}
+		
+	/*main section stylez*/
+		
+		section {
+			
+			width: 100%;
+			height: 100%;
+			background-color: #222;
+			
+		}
+		
+		#buffer {
+	
+			width: 100%;
+			height: 370px;
+			
+		}
+		
+		#tickertape {
+	
+			width: 100%;
+			height: 35px;
+			
+			background-color: black;
+			
+			position: relative;
+			
+			overflow-x: hidden;
+			
+		}
+		
+		#tickertext {
+			
+			position: absolute;
+			
+			top: 10px;
+			left: 10px;
+			
+			font-family: arial;
+			font-size: 10pt;
+			color: #666;
+			
+			white-space: nowrap;
+			
+			-webkit-animation: crawl 10s infinite linear;
+		  	-moz-animation: crawl 10s infinite linear;
+		  	-o-animation: crawl 10s infinite linear;
+		  	-ms-animation: crawl 10s infinite linear;
+			animation: crawl 10s infinite linear;
+			 
+		}
+		
+		#bodyWrap { 
+			
+			width: 1050px; 
+			padding: 25px;
+			
+		}
+		
+	/*control stylez */
+	
+		input:focus, button:focus { outline: 0; }
+		
+		input[type="range"]{
+			
+		    background: rgb(60, 60, 60);
+		    width: 65%;
+		    height: 8px;
+		    -webkit-appearance: none;
+		    
+		    transition: 0.3s;
+		    -webkit-transition: 0.3;
+		
+		}
+		
+		input[type="range"]::-webkit-slider-thumb{
+			
+		   -webkit-appearance:none !important;  
+		   width:30px;
+		   height:15px;
+		   -webkit-appearance: none;
+		   
+		    background: #82f2ea;
+		    
+		    transition: 0.3s;
+		    -webkit-transition: 0.3;
+		
+		 }
+		
+		input[type="range"]::-webkit-slider-thumb:active{ background: #5ac2e8; }
+		   
+		#sliderSpan {
+			
+			width:100%;
+			height:60px;
+			
+		}
+
+		#search {
+	
+			margin-left: 20px;
+			margin-right: 20px;
+	
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			padding-top: 6px;
+			padding-bottom: 6px;
+			
+			border-radius: 8px;
+			
+			background-color: #222;
+			
+			border: 1px solid #555;
+			
+			color: white;
+			font-family: Arial;
+			font-size: 13pt;
+	
+			position: relative;
+			bottom: 2px;
+	
+		}
+		
+		#loginButton {
+			
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			padding-top: 6px;
+			padding-bottom: 6px;
+			
+			border-radius: 8px;
+			
+			background-color: #222;
+			
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+			
+			border-width: 0px;
+			
+			cursor: pointer;
+			
+		}
+		
+		#loginButton:hover { background-color: #555; }
+		
+	/*misc stylez*/
+
+		#map {
+			
+			margin-top: 7px;
+			margin-left: 13px;
+			
+		}
+		
+		#cal {
+			
+			position: relative;
+			top: 2px;
+			
+		}

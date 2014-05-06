@@ -1,0 +1,38 @@
+    
+    
+    header, hgroup, footer, menu, nav, section, article {
+        
+        display: block;
+        
+    }
+    
+    .center {
+    
+        margin: auto;
+        
+    }
+
+    .hidden {
+        
+        display: none;
+        
+    }
+    
+    .padding {
+        
+        padding: 10px;
+        
+    }
+    
+
+    #left_bank {
+        
+        float: left;
+        
+    }
+
+    #right_bank {
+        
+        float: right;
+        
+    }

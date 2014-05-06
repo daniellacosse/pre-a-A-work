@@ -1,0 +1,57 @@
+	/*accordion stylez*/
+	
+		#accordWrap {width:300px; margin: 0; float: left;}
+	
+		.accordion,
+		.accordion ul,
+		.accordion li,
+		.accordion a,
+		.accordion span {
+			
+		    margin: 0;
+		    padding: 0;
+		    border: none;
+		    outline: none;
+		    
+		}
+		 
+		.accordion li { list-style: none; }
+		
+		.accordion li > a {
+			
+		    display: block;
+		    position: relative;
+		    min-width: 110px;
+		    padding: 5px 10px 5px 10px;
+		    margin-bottom: 10px;
+		 
+		    color: #fdfdfd;
+		    font-family: negotiate_Free;
+		    text-decoration: none;
+		 
+		    background: #222;
+		    border-radius: 8px;
+		    border: 1px solid #555;
+		    
+		}
+		
+		.accordion > li:hover > a, .accordion > li:target > a { background: #555; }
+		
+		.accordion li > .sub-menu {
+			
+		    height: 0;
+		    overflow: hidden;
+		 
+		    -webkit-transition: all .2s ease-in-out;
+		    -moz-transition: all .2s ease-in-out;
+		    -o-transition: all .2s ease-in-out;
+		    -ms-transition: all .2s ease-in-out;
+		    transition: all .2s ease-in-out;
+		    
+		}
+		 
+		.accordion li:target > .sub-menu {
+			
+		    height: 315px;
+		    
+		}

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<head>
+	
+	<title>qrtest</title>
+
+	<meta name="viewport" content="width=320" />
+	
+	<style>
+	
+		body {
+			
+			background-color: #fff8bc; 	/* light yellow */
+			
+			padding: 5px;
+			
+		}
+			
+		div {
+			
+			background-color: white;
+			border-radius: 15px;
+			
+			padding: 15px;
+			
+		}
+		
+		input {
+			
+			padding: 5px;
+			border-radius: 5px;
+			
+			
+		}	
+	
+		#email, #firstname, #sumbit, #usrtel { width: 75; }
+	
+	</style>
+
+	<script>
+	
+		var x=document.getElementById("location");
+		var gps=document.getElementById("GPS");
+		function getLocation()
+		  {
+		  if (navigator.geolocation)
+		    {
+		    navigator.geolocation.getCurrentPosition(showPosition);
+		    }
+		  else{x.innerHTML="Geolocation is currently not enabled or supported by this browser.";}
+		  }
+		function showPosition(position)
+		  {
+		  x.innerHTML="Latitude: " + position.coords.latitude + 
+		  "<br>Longitude: " + position.coords.longitude;	
+		  }
+
+	</script>
+	
+</head>
+
+
+<body>
+	
+	<div>	
+		
+		<form>
+		
+		First Name: <br /> <input type="text" id="firstname" name="firstname" required /> <br /> <br />
+		
+		Phone Number: <br /> <input type="tel" id="usrtel" name="usrtel" required /> <br /> <br />
+		
+		E-Mail: <br /> <input type="email" id="email" name="email" value="Enter vaild address." required /> <br /> <br />
+		
+		GPS <input type="checkbox" id="GPS" name="GPS" /> <br /> <br />
+		
+		<input type="submit" id="sumbit" name="submit" onclick="getLocation();" /> <br /> <br />
+		
+		</form>
+		
+		<span id="location"> &emsp; </span>
+	
+	</div>
+	
+</body>

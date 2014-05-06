@@ -1,0 +1,337 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"calRa",
+				"calRadSlider"
+			],
+			[
+				"spe",
+				"spectraGradient"
+			],
+			[
+				"tem",
+				"tempP"
+			],
+			[
+				"upd",
+				"updateWveLngthToP"
+			],
+			[
+				"wave",
+				"wavelengthP"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"w",
+				"w-resize"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"calR",
+				"calRadSlider"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"temp",
+				"tempSlideLabel"
+			],
+			[
+				"set",
+				"setCanvas"
+			],
+			[
+				"f",
+				"for	for (…) {…}"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"spec",
+				"spectraCanvas"
+			],
+			[
+				"rot",
+				"rotate"
+			],
+			[
+				"se",
+				"spectraCanvas"
+			],
+			[
+				"draw",
+				"drawHeight"
+			],
+			[
+				"canvas",
+				"canvasObj"
+			],
+			[
+				"cal",
+				"calRad"
+			],
+			[
+				"te",
+				"temperatureSlider"
+			],
+			[
+				"spect",
+				"spectraGraph"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ca",
+				"canvas	Tag"
+			],
+			[
+				"Wve",
+				"WveLngthUpr"
+			],
+			[
+				"W",
+				"WveLngthLwr"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"g",
+				"getElementById"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"stroke",
+				"strokeStyle"
+			],
+			[
+				"fil",
+				"fillStyle"
+			],
+			[
+				"strok",
+				"strokeStyle"
+			],
+			[
+				"c",
+				"ctx"
+			],
+			[
+				"can",
+				"canvas"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/L/Downloads/blackbodycalculator (2).html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/testimonials.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/contribute.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/furtherreading.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/contact.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/aboutmissbeth.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/pages/aboutjoppity.html",
+		"/C/Users/Daniel/sublimeWorkspace/joppity/joppity/index.html",
+		"/C/Users/Daniel/Desktop/blackbodycalculator.html",
+		"/C/Users/Daniel/sublimeWorkspace/blackbodycalculator.html",
+		"/C/Users/Daniel/sublimeWorkspace/daniellacosse/da.niellacos.se/index.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 2/Packages/User/Chrome.sublime-build",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 2/Packages/User/Browser.sublime-build",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-build",
+		"/C/Users/Daniel/sublimeWorkspace/daniellacosse/da.niellacos.se/m.html",
+		"/C/Users/Daniel/sublimeWorkspace/daniellacosse/da.niellacos.se/.htaccess",
+		"/C/Users/Daniel/sublimeWorkspace/da.niellacos.se/styles/desktop.css",
+		"/L/Downloads/blackbodycalculator.html",
+		"/C/Users/Daniel/sublimeWorkspace/da.niellacos.se/.htaccess",
+		"/C/Users/Daniel/sublimeWorkspace/da.niellacos.se/index.html",
+		"/C/Users/Daniel/sublimeWorkspace/da.niellacos.se/jQuery.cssParentSelector.js",
+		"/C/Users/Daniel/sublimeWorkspace/da.niellacos.se/styles/mobile.css",
+		"/C/Users/Daniel/sublimeWorkspace/narrus/index.html",
+		"/C/Users/Daniel/sublimetxtWorkspace/da.niellacos.se/index.html",
+		"/C/Users/Daniel/sublimetxtWorkspace/canvastest.html",
+		"/C/Users/Daniel/sublimetxtWorkspace/narrus/index.html",
+		"/C/Users/Daniel/sublimetxtWorkspace/sublime test project.sublime-workspace",
+		"/C/Users/Daniel/sublimetxtWorkspace/blackbodycalculator.html",
+		"/C/Users/Daniel/blackbodycalculator.html",
+		"/C/Users/Daniel/Documents/GitHub/EclipseWorkspace/narrus/scripts/menu.js",
+		"/C/Users/Daniel/Documents/GitHub/EclipseWorkspace/da.niellacos.se/index.html",
+		"/C/Users/Daniel/Documents/GitHub/EclipseWorkspace/da.niellacos.se/styles/desktop.css",
+		"/C/Users/Daniel/Documents/GitHub/EclipseWorkspace/da.niellacos.se/scripts/jQuery.cssParentSelector.js",
+		"/C/Users/Daniel/canvastest.html",
+		"/C/Users/Daniel/blackbodydraft.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"spectraCanvas",
+			"calculateRadiancyPercent",
+			"calculateRadiancy2",
+			"Intensity"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "joppity"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 35.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Daniel/Documents/GitHub/EclipseWorkspace/da.niellacos.se/styles/desktop.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Daniel/sublimeWorkspace/daniellacosse.sublime-project"
+			]
+		],
+		"width": 875.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 164.0,
+	"status_bar_visible": true
+}

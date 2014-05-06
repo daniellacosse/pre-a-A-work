@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title> Blackbody Calculator </title>
+
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+</head>
+
+<body> 
+
+    <div class='centerVert'>
+
+        <div id='content-wrapper'>  
+
+            <canvas id="spectraGraph"width="500" height="300">
+
+                Your browser doesn't support HTML5 canvas. :C
+
+            </canvas>
+
+            <section>
+                <span class="tooltip"></span>
+                <div id="temperatureSlider"></div>
+            </section>
+
+            <section>
+                <span class="tooltip"></span>
+                <div id="calRadSlider"></div>
+            </section>
+
+            <p id="tempP">Temperature (K)</p> 
+            <p id="wavelengthP">Wavelength (nm)</p>
+            <p id="wavelengthP2"></p>
+            <p id="pcntP"></p>
+
+        </div>
+
+    </div>
+
+    <!--<script type="text/javascript" src="scripts/lib.js"></script>-->
+    <script type="text/javascript" src="scripts/libv2.js"></script>
+    <script type="text/javascript" src="scripts/jqsiaf.js"></script>
+
+</body>

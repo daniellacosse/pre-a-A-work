@@ -1,0 +1,36 @@
+#crpAcrd {
+    
+    width: 850px;
+    
+    display: block;
+    white-space: nowrap;
+    
+}
+
+.crpAcrdItem {
+    
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.crpAcrdWrap {
+    
+    margin-right: 5px;
+
+    position: relative;
+
+    display: inline-block;
+    
+}
+
+.crpAcrdDescrip {
+    
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    
+    background-color:#1C1E19;
+    
+}

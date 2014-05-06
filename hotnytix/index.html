@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+	
+	<title> HOTNYTIX </title>
+	
+	<link rel="stylesheet" href="styles/desktop.css" type="text/css"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/slider.js"></script>
+	
+</head>
+
+<body>
+	
+	<header>  
+		
+		<nav>
+		
+			<button id="loginButton" value="Login" class="negotiateFont">Login</button>
+			<input type="text" id="search" placeholder="Search for Events" />
+			<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width=75&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px;" allowTransparency="true"></iframe>		
+		
+		</nav>
+		
+	</header>
+	
+	<div id="slideshow">
+			
+				<img class="slideshowImg" src="assets/concert.jpeg" draggable="false"/>
+				<img class="slideshowImg" src="assets/Pippin-Broadway-Musical.jpg" draggable="false"/>
+				<img class="slideshowImg" src="assets/Shochiku-Grand-Kabuki-001.jpg" draggable="false"/>
+				<img class="slideshowImg" src="assets/jimi_hendrix-208241-1.jpg" draggable="false"/>
+				<img class="slideshowImg" src="assets/15155-deadmau5-concert.jpg" draggable="false"/>
+			
+	</div>
+	
+	<section>
+		
+		<div id="buffer">
+			
+		</div>
+		
+		<span id="sliderSpan">
+			
+			<input class="center" id="slideshowPosition" type="range" min="0" max="100" value="0"/></span>
+			
+		<div id="tickertape">
+			
+			<span id="tickertext">
+				
+				Here's some text about stuff that's going on in the event world right now, featured tweets possibly &mdash; <em>2:30 PM</em>  &emsp; &emsp;
+				There can even be hyperlinks to pages for people to buy tickets. while pictures are great for promoting main events, the ticker tape lets us have some options. &mdash; <em>8:45 PM</em> 
+				
+			</span>
+			
+		</div>
+	
+	<div id="bodyWrap" class="center">
+
+	<div id="accordWrap">
+		
+		<ul class="accordion">
+	 
+		    <li id="one"><a href="#one">calendar</a>
+		    	
+		    	<div class="sub-menu">
+		    		
+		    		<iframe id="cal" src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;height=275&amp;wkst=1&amp;bgcolor=%23ffffcc&amp;src=thisemailmakesnosense%40gmail.com&amp;color=%23A32929&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="300" height="280" frameborder="0" scrolling="no"></iframe>
+		    	</div>
+		    	   	
+		    </li>
+		 
+		    <li id="two"><a href="#two">map</a>
+		    	
+		    	<div class="sub-menu">
+		    		
+		    		<iframe width="275" height="275" id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=40.697488,-73.979681&amp;spn=0.93706,1.135712&amp;t=m&amp;z=10&amp;output=embed"> &emsp; </iframe>
+		 	
+		    	</div>
+		    
+		    </li>
+	 
+		    <li id="three"><a href="#three">category</a>
+		    
+		    	<div class="sub-menu">
+		    
+				    <select>
+						  <option value="">Genre</option>
+						  <option value="Music">Music</option>
+						  <option value="Sports">Sports</option>
+						  <option value="Art">Art</option>
+						  <option value="Theatre">Theatre</option>
+						  <option value="Family">Family</option>
+						  <option value="Misc">Miscellaneous</option>
+				 	</select>
+				 	
+				 	<select>
+						  <option value="">Date</option>
+						  <option value="Today">Today</option>
+						  <option value="Weekend">This Weekend</option>
+						  <option value="NxtWeekend">Next Weekend</option>
+						  <option value="Month">Later This Month</option>
+						  <option value="NxtMonth">Next Month</option>
+				 	</select>
+				 	
+		 		</div>
+			</li>
+		</ul>
+	</div>
+
+			<div id="tabWrap">
+	
+				<ul class="tabs">
+			        <li>
+			          <input type="radio" checked name="tabs" id="tab1">
+			          <label for="tab1">concerts</label>
+			          <div id="tab-content1" class="tab-content animated fadeIn">
+			    ...
+			          </div>
+			        </li>
+			        <li>
+			          <input type="radio" name="tabs" id="tab2">
+			          <label for="tab2">theatre</label>
+			          <div id="tab-content2" class="tab-content animated fadeIn">
+			            ...
+			          </div>
+			        </li>
+			        <li>
+			          <input type="radio" name="tabs" id="tab3">
+			          <label for="tab3">sports</label>
+			          <div id="tab-content3" class="tab-content animated fadeIn">
+			            ...
+			          </div>
+			        </li><li>
+			          <input type="radio" name="tabs" id="tab4">
+			          <label for="tab4">family</label>
+			          <div id="tab-content4" class="tab-content animated fadeIn">
+			            ...
+			          </div>
+			        </li>      
+				</ul>
+				
+			</div>
+		</div>
+	</section>
+</body>

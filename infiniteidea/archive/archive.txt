@@ -1,0 +1,121 @@
+//ON AUGUST 21st
+
+
+<td width="8%" valign="top"><img name="index_r1_c1" src="images/index_r1_c1.png" width="120" height="1024" border="0" id="index_r1_c1" alt="" /></td>
+   <td width="60%" valign="top" halign="center">
+   	<table width="100%" border="0" cellspacing="0" cellpadding="12">
+    	 <tr>
+      		 <td align="center"><a href="http://www.indiegogo.com/aboltabirdmovie"><img src="images/teslaboards.jpg" alt="TeslaStoryboards" width="960" height="451" border="0" longdesc="images/teslaboards.jpg" /></a></td>
+     	</tr>
+     	<tr>
+       		<td align="center"><img name="index_r6_c2" src="images/index_r6_c2.png" width="435" height="78" border="0" id="index_r6_c" alt="" /></td>
+     	</tr>
+     	<tr>
+   		  <td>
+            <div id="container" class="columns">
+              <p><strong><font class="Title">A BOLT, A BIRD;</font></strong><br />
+                <br />
+                
+                <font class="Article">&nbsp;&nbsp;&nbsp;The <a href="http://www.indiegogo.com/aboltabirdmovie">IndieGoGo</a> page is live and currently accepting your generous donations. I'm amazed how far the project has come. I'm already looking through actors! I'm headed back to New York this Sunday! The <a href="http://soundcloud.com/infiniteidea/a-bolt-a-bit">video game</a> is functional! I'm in the middle of special effects <a href="https://vimeo.com/44905005">testing</a> and prop <a href="https://vimeo.com/44959600">building</a>. While I can I've been drawing more storyboard cards as I go, as you can see above. That's the most daunting task on the horizion - I'm not even sure if I'm halfway done and I already have about 90 cards. For those that are curious, I'm drawing the cards in layers - this way I can composite backgrounds and foregrounds together in photoshop (that's how I got the two-tone effect in the previz preview - by putting a filter on the foreground layers). There's an increased level of efficiency with this method, I don't have to draw the backgrounds over and over again. Diety help me if I had to do that. So yeah, if you pick the 'Hand-Drawn Storyboard Card' perk, you'll get one of those cards, mounted on a cardboard slate with 'A Bolt, A Bird' embossed on the lower register. <br />
+                &nbsp;&nbsp;&nbsp;In the near future you can expect screenshots of the game and further video snippets of the pre-production process as it unravels. I won't be in the position to post all those wonderful things to my main page, but you can follow <a href="https://twitter.com/INFINITE_IDEA">me</a> or the <a href="https://twitter.com/ABoltABird">project</a> or like the facebook <a href="http://www.facebook.com/ABoltABird">page</a> and that shit will work itself out.  We've got a fundraising <a href="http://www.facebook.com/events/481897498492188/">party</a> coming up, convieniently on Tesla's Birthday. I don't know how many of you are in the area.<br />
+                &nbsp;&nbsp;&nbsp;Speaking of fundraising, if it isn't within your means to contribute to the project (Trust me, I understand. I'm not in a position to donate to any project.) you should totally print out a couple of these <a href="downloads/teslaflier.pdf">fliers</a> (<a href="downloads/TeslaPartyFlyer.pdf">This</a> one too if you're in NYC) and post them somewhere. Anywhere. Get the word out. Please.</font></p>
+</div>
+            </td>
+
+
+
+
+//ON JUNE 20th
+
+<iframe src="http://player.vimeo.com/video/42041770" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+<strong><font class="Title">SO MANY THINGS;</font></strong><br />
+                <br />
+                
+                <font class="Article">&nbsp;&nbsp;&nbsp; After a large volume of trifle and toil <a href="https://vimeo.com/42041770">BE OK VIET NAM</a> is finally complete. Actually, it's been complete for about a month now. I've sort of just skipped over one thing on to the next. <br /> 
+                &nbsp;&nbsp;&nbsp;I'm very serious when I say 'SO MANY THINGS' because, well, the amount of things that have been happening are so many. I'm debating even at this very moment whether I should write them all down NOW or stagger the information out so that all five of you aren't hopelessly overwhelmed. You should really really really just pay attention to the twitter feed or even follow me or something if you're dying to know the most recent news.<br />
+                &nbsp;&nbsp;&nbsp;Okay, I'm going to be in a resonable position to do work on the site for the next week and a half. I'm quite gung ho to implment iframes (boooo) or PHP (semi-booo) or something so that the site architechture finally reveals itself in full. <br /> 
+                &nbsp;&nbsp;&nbsp;But here's the deal; I've got 100 or so drawings to complete by mid-July, not to mention all the other pre-production necessary to make <a href="http://www.indiegogo.com/aboltabirdmovie">A Bolt, A Bird</a> a reality. In one-and-a-half weeks, I'm certainly no longer going to be in the position where I can do more than text updates. It's looking like Site Build v2.2 will have to wait until Mid-August. (awwwww) </font><font class="Article"><br />
+                &nbsp;&nbsp;&nbsp;There is a little silver lining, at some point this week I'm going to implement a ticker or maybe even just a basic text update with not only ALL the current <a href="http://www.facebook.com/ABoltABird">A Bolt, A Bird</a> info, but a series of special thanks credits to all of you that have donated already. <br />
+                &nbsp;&nbsp;&nbsp;YES, I know, slow and steady progress - but there's only so much you can do with a handfull of staff and no money.</font>
+
+//ON APRIL 15th 2012
+
+ <img src="images/banner3.jpg" width="691" height="281" /> 
+
+<strong><font class="Title">A Short Update;</font></strong><br /><br />
+
+<font class="Article">&nbsp;&nbsp;&nbsp; So the Vietnam Documentary has been put on hold as we prepare to launch the Kickstarter for  'A Bolt, A Bird'. We've made 
+
+quite a bit of progress; last weekend I sketched out 188 thumbs and plan to start work on the official storyboards soon. I've sketched out a potential <a 
+
+href="http://soundcloud.com/infiniteidea/a-bolt-a-bird-scoresketch-tm"> score</a>, even. We're still waiting to hear about a quote from the New Yorker Hotel as to 
+
+how much the room plus legal fees will cost. There is good news; <a href="http://www.cafepress.com/">CafePress </a> has officially sponsored the campaign, providing 
+
+us with merchandise to hand out to our donors!<br />
+
+&nbsp;&nbsp;&nbsp;I'm going to resume work on the Vietnam Documentary pretty soon. We're in a holding pattern on shooting the Kickstarter video, waiting for a few outside sources to 
+
+get back to us with  important information. <br />
+
+&nbsp;&nbsp;&nbsp;So yes! It's been quite busy! Don't expect another update any time soon! <br /></font>
+
+//ON MARCH 23rd 2012
+
+ <img src="images/banner2.jpg" width="691" height="281" /> 
+
+<strong><font class="Title">Post-spring break update;</font></strong><br /><br />
+                <font class="Article">&nbsp;&nbsp;&nbsp; Here I am again, taking to out loud to myself on the internet where everyone can hear me but no one will listen. I was planning to update sooner but for some reason my server was out of commission for a few days. Spring break was an interesting tale of wonderful sights and terrible social decisions. I've got pictures of <a href="www.facebook.com/media/set/?set=a.3320020715229.2153108.1109627647&amp;type=1">Paris</a> and <a href="www.facebook.com/media/set/?set=a.3288873136559.2152490.1109627647&amp;type=1">Sweden</a> open to the public, and at the end of the semester I'll put my favorites on Deviant Art, just like with <a href="futureruler.deviantart.com/gallery/35380197">Vietnam</a>. I'm a bit tired (and slightly low-funded), so it's going to take me a couple days to get back up to speed. Aside from the other things I've currently got undertow, I've picked up a couple side missions. I don't plan to reveal all just yet mainly to stem the tide of information, but, amid the Tesla film and the Vietnam Documentary I've been developing my own language, working on my senior project, and today I plan to start php lessons so Site Build v2.2 can contain extra levels of fun. </font><font class="Article">OH, and considering the relative 'acclaim' of <a href="www.youtube.com/watch?v=3J_VVgKJGjI">&gt;&gt;this&lt;&lt;</a> (which is great considering that I literally spent more time rendering this video than on any other aspect of its production) I'm going to do an ACTUAL Taylor Swift cover in a... similar style. Actually put a little effort into it this time.</font><br />
+              &nbsp;&nbsp;&nbsp;<span class="Article">IT IS TOO MUCH IT IS TOO MUCH</span><br />
+              &nbsp;&nbsp;&nbsp;<font class="Article">Not much has happened on the 'warfront,' although it does appear I have an ally. We were slated to comment on a fellow student's blog post (I was terrified, I knew I'd be criticizing someone for something they probably didn't actually think to be true.) Well, someone actually commented on my original post, offering me their support! I hope they're taking the class for no grade as well, heh heh.</font><br />
+              &nbsp;&nbsp;&nbsp;<font class="Article">Well, what am I doing? I should be contributing to society, not stroking my own ego. FINGERS AWAAAYYYY</font><br />
+
+//ON MARCH 7th 2012
+
+
+<font class="Title">Pre-spring break update;</font></strong><br /><br />
+              <font class="Article">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'mma 'bout ta peace out for spring break (Sweden and Paris whatu(p x 4)), which will explain the lack of content all up in here over the next couple of weeks or so. I plan to be at least marginally productive while away - I want to continue work on the Tesla script and gather all the footage I can. But that's about it. -END TRANSMISSION-<br />
+
+//ON MARCH 5th 2012
+
+
+  <iframe src="http://player.vimeo.com/video/37898535?autoplay=1" width="403" height="226" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+
+//ON MARCH 1st 2012
+
+<a href="http://futureruler.deviantart.com/#/d4rdkb8" title="Oh, my heart is a flutter! (IT'S A BIRD PUN)"><img src="imagesv2.1/featured/boldbird.png" width="600" height="281" border="0" /></a>
+
+<strong><font class="Title">The Vietnam Documentary, 'A Bolt, A Bird,' and a War;</font></strong><br /><br />
+              <font class="Article">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Version 2.1 is roaring and ready to go! Not really much more than a few vital rearrangements. Things are start going to get interesting come the next version and henceforth. Note; I'm aware the two-column text wrap doesn't work in IE... I'll get around to it.<br />
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sadly the 'Untitled Vietnam Documentary' is going... slowly. I still don't even have a name for it yet. I've been working at it a little bit each day, picking out what I like to call 'highlights' (I'm ignorant to what actual documentary-makers call them, but essentially I'm just dragging well-shot and informational clips from the raw footage into the time-line). Another thing that consumes a lot of time - stabilization analysis. Yes, iMovie supports stabilization, for some reason. Unfortunately it's not incredibly sophisticated (nothing like my copy of AE5.5 back home) but it usually does more harm than good. (Usually). Thankfully I can at least work on the site while all that processin' is goin' down. No promises, but hopefully before I leave for spring break I'll have fashioned together some sort of preview.<br />
+                
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENOUGH STALLING. What is this mysterious 'A Bolt, A Bird' I speak of? Well my friends, this summer I am slated to shoot a short film about the latter days of the incredible inventor Nikola Tesla. During the last few years of his life, the Serbian genius was certainly put through the ringer. Most interestingly, he claims to have fallen in love with a pidgeon, who paid him visits religiously until the day that pidgeon died. That will be the focus of the film, sans a major detail or two - I'm going to leave it at that for now. As of this moment I've got a full, semi-immature draft of the script and am working on aquireing locations with my lovely producer. It is very likely that the film could be shot in the very room where Tesla died. I KNOW, I can't believe it either. My life has devolved into a perpetual panic attack/nerdgasm.<br />
+                
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oh yeah, I said something about a 'war'? Okay, okay. Agree with me or not, but there's this online class all NYU Florence students are required to take called 'Topics in Italian Culture' which... I feel based on the way it's structured just encourages subconscious discrimination. For my first blog post I was required to see one Italian film and then from that pull themes or motifs common in Italian art, and most importantly, focus on how Italian art is different from art in my home country. That's not a question I can answer having seen one film. So I wrote a 500-word blog post about how I couldn't answer that question and why, and tangentially my theories on subconscious discrimination (unfortunately I just thought of this term, I probsies shoulda used it). I received a failing grade for lack of "throughfulness (sic), creativity, or writing skills." Yeah. They gave me a chance to rewrite the entry. So in response I wrote another, slightly less-antagonistic, 500-word version, stating that "I will not be strong-armed by poor grades..." and that "...debate is the only way to truly converge upon the appropriate solution, not a docile acceptance of the status quo." They're going to have to fight me. The first and second essays can be found <a href="archive/topicsinitalianwar.txt">here</a>. I'm usually not this confrontational, I promise. Feel free to debate with meif you're bored enough.<br />
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's recently come to my attention that the teacher doesn't really want to be doing this, that she thinks the class is stupid too... We'll see how it goes down. To quote Bill Watterson: "FURTHER UPDATES AS EVENTS WARRANT". Actually I'm pretty sure that was a quote of Bill Watterson quoting something else. Whatever, it's the context that matters. <br />
+			</font>
+                
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oh yeah, I said something about a 'war'? Okay, okay. Agree with me or not, but there's this online class all NYU Florence students are required to take called 'Topics in Italian Culture' which... I feel based on the way it's structured just encourages subconscious discrimination. For my first blog post I was required to see one Italian film and then from that pull themes or motifs common in Italian art, and most importantly, focus on how Italian art is different from art in my home country. That's not a question I can answer having seen one film. So I wrote a 500-word blog post about how I couldn't answer that question and why, and tangentially my theories on subconscious discrimination (unfortunately I just thought of this term, I probsies shoulda used it). I received a failing grade for lack of "throughfulness (sic), creativity, or writing skills." Yeah. They gave me a chance to rewrite the entry. So in response I wrote another, slightly less-antagonistic, 500-word version, stating that "I will not be strong-armed by poor grades..." and that "...debate is the only way to truly converge upon the appropriate solution, not a docile acceptance of the status quo." They're going to have to fight me. The first and second essays can be found <a href="archive/topicsinitalianwar.txt">here</a>. I'm usually not this confrontational, I promise. <br />
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's recently come to my attention that the teacher doesn't really want to be doing this, that she thinks the class is stupid too... We'll see how it goes down. To quote Bill Watterson: "FURTHER UPDATES AS EVENTS WARRANT". Actually I'm pretty sure that was a quote of Bill Watterson quoting something else. Whatever, it's the context that matters. <br />
+			</font>
+
+//ON FEBRUARY 25th 2012
+
+<iframe src="http://player.vimeo.com/video/37129513" width="500" height="281" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+
+//ON FEBRUARY 18th 2012
+
+<img name="index_r4_c2" src="images/index_r4_c2.png" />
+
+<p><strong class="Title">AN UNTITLED VIETNAM DOCUMENTARY –</strong><br />
+       <p><span class="Article">&#160;&#160;&#160;&#160;&#160;Well, I've obviously been working on the site too, but that's besides the point. This winter I went on a two week trip to Vietnam and brought along my little Sony HDcam. I shot a overwhelming ten hours of footage. Just now I finished transcoding all of it into iMovie –<br />
+       &#160;&#160;&#160;&#160;&#160;SIDENOTE: Why iMovie  you ask? Right now I'm studying in NYU <a href="http://www.nyu.edu/global/global-academic-centers1/florence.html">Florence</a>. I've been able to edit the site via a remote desktop application on my little netbook, but it just isn't feasible to edit by the same means. I've got a bit of a deadline on this project as well, so I don't really have much of a choice.<br />
+       &#160;&#160;&#160;&#160;&#160;– and I plan to edit over the next couple of... while(s). For now you can satiate yourself with <a href="http://futureruler.deviantart.com/gallery/35380197">this</a>. (Yes, my deviantART name is 'FutureRuler', pretend it isn't). I'm not going to say when or where it will be done. That's something I've learned from previous endeavors. Considering that I've now ingrained 8NFINITEIDEA into every aspect of my life (and most importantly, <a href="http://www.facebook.com/FutureRuler">facebook</a>), I hope that the constant reminder will help me take things more seriously.The steps I've taken should help transform this hobby into a career.<br />
+      &#160;&#160;&#160;&#160;&#160; Oh, I plan to do a similar documentary-type thing for the places I visit in Europe too. That will obviously come even later then the so-called 'UNTITLED VIETNAM DOCUMENTARY'.<br />
+      &#160;&#160;&#160;&#160;&#160; Also, I'm certainly planning on working with the site more. It may even 'evolve' into it's final stage organically as I try increasingly complex things.</span><br />
+       ...<br />
+      <strong>-CIAO FOR NOW-</strong><br />

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META http-equiv="Pragma" content="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<meta http-equiv="cache-control" content="no-cache" />
+<title>v2.3</title>
+<style>
+.jc{
+position:relative;
+}
+</style>
+
+<script language="JavaScript1.2">
+
+//Trembling message script- © Dynamic Drive (www.dynamicdrive.com)
+//For full source code, 100's more DHTML scripts, and TOS,
+//visit http://www.dynamicdrive.com
+
+var ns6=document.getElementById&&!document.all
+var ie=document.all
+
+var customcollect=new Array()
+var i=0
+
+function jiggleit(num){
+if ((!document.all&&!document.getElementById)) return;
+customcollect[num].style.left=(parseInt(customcollect[num].style.left)==-1)? customcollect[num].style.left=1 : customcollect[num].style.left=-1
+}
+
+function init(){
+if (ie){
+while (eval("document.all.jiggle"+i)!=null){
+customcollect[i]= eval("document.all.jiggle"+i)
+i++
+} 
+}
+else if (ns6){
+while (document.getElementById("jiggle"+i)!=null){
+customcollect[i]= document.getElementById("jiggle"+i)
+i++
+}
+}
+
+if (customcollect.length==1)
+setInterval("jiggleit(0)",80)
+else if (customcollect.length>1)
+for (y=0;y<customcollect.length;y++){
+var tempvariable='setInterval("jiggleit('+y+')",'+'100)'
+eval(tempvariable)
+}
+}
+
+window.onload=init
+
+</script>
+<style>
+body {
+	/*background-color:#000;*/
+	background-color: transparent;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #FFF;
+	float: none;
+	
+	white-space: normal;
+}
+a:link {
+	color: #CCC;
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: underline;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #666;
+}
+a:active {
+	text-decoration: underline;
+	color: #FFF;
+}
+#container{
+            text-align: justify;
+            width: 95%;
+            margin: 10px auto;
+            padding: 0px;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34950159-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</head>
+<body>
+<base target="main" />
+<center><table width="98%" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+  <td>
+  <center>
+    <a href="RING.html" target="main"><img src="../imagesv2.3/ringfade.gif" width="651" height="203" border="0"></a>
+  </center>
+  <p><br />
+    <br />
+    <strong>v2.3;</strong><br />
+    <em>December 6th, 2012</em>
+    </p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Spit-shine! Spotlight!<br />
+    <br />
+    
+   &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=TkbOGaJqJmg#t=16s" target="_blank">Riff Raff! Streetrat! Scoundrel! </a><br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Hope you like the improvements. I'm hoping they'll prove more ergonomic and aesthetic.<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Next up - loading bars! And other stuff!<br />
+    <br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Also I would click on the above GIF if I were you. I'm too tired right now to explain what the 'ring' is, or link the new 'spotlight tab' to anything. That'll be v2.31 in like, a week. So sit tight, my imaginary friends.<br /><br />
+    
+  &nbsp;&nbsp;&nbsp;&nbsp;Okay, time to talk about stuff<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Typography is cool, let's talk about typography<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;There are basically two 'classes' of font - serif and sans-serif. Basically Serif fonts are more complex than sans-serif fonts. Sans-serif is easier to read at lower resolutions, Serif is easier to read at higher resolutions (this all has to do with perception psychology, just take my word for it).<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;There are also cultural connotations for each - for example, serif fonts may seem more authoritarian and 'authentic', where sans-serif fonts can reek of high art and DESIGN in capital letters. <br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;In case you were wondering, because capital letters are large and all roughly the same size, they're also more difficult to read, as they have less features that distinguish themselves from one another.<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;With that in mind, check out this <a href="http://boingboing.net/2012/05/03/book-designer-chip-kidds-ent.html">Teddy Bear Talk</a><br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; Clearly this man is a mad scientist of design, and the lopsided glasses definitely don't help him fight that image.<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Note the use of serif and sans-serif fonts in his designs. Their usage typically aligns with the messages Chip is trying to convey in his designs. Take the ‘Dry’ cover, for instance, and I think this is my favorite example of this - the font on the cover, as Chip explains, is lying to you. To maximize this effect, a serif font is used. Why? Well, due to the serif font’s percieved sense of authority, there’s that much more legitimacy to undermine. I’m pretty sure if Chip’d used a sans-serif the effect would have a much lesser impact.<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Enough about static typography. What about kinetic typography? <span id="jiggle0" class="jc"><b> Type that moves. </b></span><br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Type animation dates back to none other than the ABSOLUTE TECHNICAL GENIUS of George Melies, the man who made 500 movies (watch Hugo if you don’t believe me and/or if you haven’t seen it). There are two aspects to it - motion (example) (how the text moves through space) and fluidity (example) (changes in shape, color, font size, over time). Both of these dimensions have implications as well - motion has that of, well, speed, relocation, progress... and fluidity that of transformation and change. <br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;So if we were to look at kinetic typography as a medium, we’d say that it’s best at illustrating concepts of authority and ‘DESIGN’ (from the ‘typography’ part) and speed, progress, change... and transformation. Not to mention all the McLuhanistic implications of language (visual centrism, individualization, mechanical reproduction, <a href="http://www.nextnature.net/2009/12/the-playboy-interview-marshall-mcluhan/">detribalization, etc</a> ). This is a simplification, but it’s certainly a start of a look at the anatomy of what ‘kinetic typography’ purports. <br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Oh and as an aside <a href="www.playingforchange.com">this is cool</a>.<br /><br />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;Further proof that being a musician is risky business. Which is why I spilt my investments. </p></td>
+     
+  
+<br />
+
+</tr>
+<tr><td align="center"><div class="fb-comments" data-href="http://www.infiniteidea.net/main/12_12_06.html" data-width="624" data-num-posts="2" data-colorscheme="dark">
+	</div></td></tr>
+</table></center>
+</body>
+</html>

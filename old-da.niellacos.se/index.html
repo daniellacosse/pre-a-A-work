@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+
+<head>
+	
+	<title>Daniel LaCosse | Narrative Engineer</title>
+	
+	<!--Vanilla Metatags-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Narrative Engineer" />
+	
+	<!--Open Graph (Facebook) Metatags-->
+	<meta property="og:title" content="DANIEL LaCOSSE" />
+	<meta property="og:url" content="http://da.niellacos.se" />
+	<meta property="og:image" content="http://da.niellacos.se/assets/fb_img.jpg" />
+	<meta property="og:description" content="Narrative Engineer" />
+	
+	<!--CSS FILES-->
+	<link href="styles/desktop.css" rel="stylesheet" type="text/css" />
+	<link href="styles/mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 1280px)"  />
+
+	<link href="styles/keyf.css" rel="stylesheet" type="text/css" />
+	<link href="styles/cropAccord.css" rel="stylesheet" type="text/css" />
+	<link href="styles/playlister.css" rel="stylesheet" type="text/css" />
+
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+	
+	<!--scripts to run on instantiation-->
+	<script type="text/javascript">
+
+	  if (screen.width <= 800) window.location = "http://da.niellacos.se/m/";
+	
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/jquery.transit.min.js"></script>
+
+
+</head>
+
+<body onload="parseURLHash();">
+	<base target="_blank">
+	
+	<h1 class="hidden">da.niellacos.se</h1>
+	
+	<!--header containing da.niellacos.se titlecard-->
+	<header class="center">
+		
+		<img src="assets/theme/iso/headerimg.svg" draggable="false" />
+		
+	</header>
+
+	<!--content body of da.niellacos.se - contains all web pages-->
+	<section id="activepage" class="center">
+		<div id="buffer"> </div> <!--positions activepage_content under the header (REMOVE)-->
+		
+		<div id="activepage_content" class="centerVert">
+			
+			<!--buffering animation-->
+			<canvas id="canvas" width="128" height="128">
+			</canvas>
+			
+			<!--content that loads by default, 'hpg' stands for 'homepage'-->
+			<div id="hpg" class="hidden content">
+					
+				<nav>
+							
+					<!--labels for the homepage selectors-->
+					<p id="intro_selectLabel" class="hpg_selectLabel"> Intro </p>
+					<p id="news_selectLabel" class="hpg_selectLabel half-opacity"> News </p>
+					<p id="aboutme_selectLabel" class="hpg_selectLabel half-opacity"> More About Me </p>
+
+					<!--homepage selectors - the buttons you click on to switch between homepages-->
+					<span id="intro_select" class="hpg_selector bgfill"> </span>
+					<span id="news_select" class="hpg_selector bgfill"> </span>
+					<span id="aboutme_select" class="hpg_selector bgfill"> </span>
+							
+					<!--'selector' indicates which page is currently selected-->
+					<span id="active_selector" class="bgfill"> </span>
+							
+				</nav> <!--END nav-->
+						
+				<div id="hpgs">
+								
+					<div id="intro" class="homepage">
+									
+						<p id="introtext1" class="hidden">
+										
+							hi
+									 	
+						</p> <br />
+									 	
+						<p id="introtext2" class="hidden">
+										
+							My name is Daniel LaCosse. I'm a Narrative Engineer.
+									 	
+						</p> <br /> 	
+									 	
+						<p id="introtext3" class="hidden">
+										
+							And to be honest, I'm still trying to figure out what that means. <br />
+							<a href="http://www.youtube.com/watch?v=2VYRjHPmZdQ">Here's my best attempt at explaining myself.&nbsp;</a>
+									
+						</p> <br />
+										
+						<p id="introtext4" class="hidden">
+									 	
+							<em>DISCLAIMER: Everything on this site is my doing. Hey &mdash; I'm just saying that it's a lot of stuff so I can see how you might think otherwise.</em> 
+							<a href="https://twitter.com/search?q=%23humblebrag&src=tyah">#humblebrag&nbsp;</a>
+									 
+						</p> 
+
+					</div> <!--END intro-->
+								
+					<div id="news" class="homepage hidden"> <!--#news SHOULD redirect to this homepage-->
+
+						<div id="recent_news">
+										
+							<time datetime="7-12-2013" class="half-opacity">December 7th, 2013</time> &mdash; <span style="color:red;">Alpha Launch!</span>
+								
+							<br />
+							<br />
+									
+							<div>
+
+								However, we have a ways to go to hit BETA;
+											
+								<ul class="half-opacity">
+												
+									<li> Fix various animation glitches. </li>
+									<li> Make a custom slideshow to replace the ugly picasa slideshow embeds. </li>
+									<li> Force jQuery scrollbar. </li>
+									<li> Ensure cross-browser compatability (currently works best in the modern Chrome browser). </li>
+									<li> Continue to address accessibility and polish of the UI. </li>
+									<li> Develop support for mobile, narrow and ultra HD versions of the site. </li>
+									<li> Implement HTML cookie on which to save user "settings". </li>
+									<li> Implement an interactive resume, shop, and "site skins". </li>
+												
+								</ul>
+										
+							</div>
+										
+						</div> <!--END #recent_news-->
+									
+					</div> <!--END #news-->
+						
+					<div id="aboutme" class="homepage hidden"> <!--#me SHOULD redirect to this homepage-->
+
+						<div style=" width: 368px; white-space: normal; position: absolute; top: 0; left: 325px;">
+
+							Graduating from NYU Gallatin in May of 2013, I've got experience in Narrative Consulting,
+							Illustration, Graphic Design, Music Composition, Videography,
+							Editing, Video Effects, Motion Graphics, Web Development, and Game Design.
+										
+							<br /><br />
+							<a href="assets/CV.pdf" target="_blank">CV&nbsp;</a>
+										
+							<br /><br />
+							Email: <a href="mailto:d@niellacos.se">d@niellacos.se&nbsp;</a> 
+										
+						</div>
+									
+						<div style="position: absolute; top: 270px; left: 325px;">
+
+							<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+							<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/daniellacosse" data-format="inline" data-related="false">
+							</script>
+
+						</div>
+									
+						<div style="position: absolute; top: 0; left: 0px; right: 400px;">
+
+							<a class="twitter-timeline" href="https://twitter.com/daniellacosse" data-widget-id="297534218517487616">Tweets by @daniellacosse</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+						</div>
+							
+					</div> <!--END #me-->
+						
+				</div> <!--END hpgs-->
+					
+			</div> <!--END hpg_content-->
+			
+			<!--blogger iframe, basically (ALTERNATIVES?) | #ideas redirects-->
+			<div id="ideas" class="center hidden content">
+					
+				<iframe width="100%" height="100%"  frameborder="no" src="http://blog.da.niellacos.se">	
+						
+				</iframe>
+					
+			</div>
+
+			<!--visual slideshow, home of the crop accordion (RESTRUCTURE?) | #viz redirects-->
+			<div id="viz" class="center hidden content">
+					
+				<div id="crpAcrd">
+					
+					<!--0--> 
+					<div class="crpAcrdWrap"> 
+	
+						<div id="0_crpAcrd" class="crpAcrdItem">
+							
+							<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101935604474997094179%2Falbumid%2F5954720474592797809%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+							
+						</div>
+						
+						<div class="crpAcrdDescrip hidden">
+							
+							&nbsp; Illustrations &nbsp; &nbsp;
+							
+						</div>
+					
+					</div>
+					
+					<!--1--> 
+					<div class="crpAcrdWrap"> 
+						
+						<div id="1_crpAcrd" class="crpAcrdItem">
+							
+							<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101935604474997094179%2Falbumid%2F5954720652055863553%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+							
+						</div>
+						
+						<div class="crpAcrdDescrip hidden">
+							
+							&nbsp; Digital Art &nbsp; &nbsp;
+							
+							
+						</div>
+					
+					</div>
+					
+					<!--2-->
+					<div class="crpAcrdWrap"> 
+					
+						<div id="2_crpAcrd" class="crpAcrdItem">
+							
+							<iframe 
+							src="https://docs.google.com/presentation/d/1uzIsZB0ZpNV7V546_FrXuyjxEo45yxaClvuu0OTza0A/embed?start=false&loop=false&delayms=3000" 
+							frameborder="0"
+							width="960" 
+							height="749" 
+							
+							
+							allowfullscreen="true" 
+							mozallowfullscreen="true" 
+							webkitallowfullscreen="true"> 
+							</iframe>
+							
+						</div>
+						
+						<div class="crpAcrdDescrip hidden">
+							
+							&nbsp; RING &nbsp; &nbsp; <br />
+							&nbsp; Wearable Tech Concept &nbsp; &nbsp;
+							
+						</div>
+					
+					</div>
+					
+					<!--3-->
+					<div class="crpAcrdWrap"> 
+					
+						<div id="3_crpAcrd" class="crpAcrdItem">
+							
+							<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101935604474997094179%2Falbumid%2F5954720724953951633%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+							
+						</div>
+						
+						<div class="crpAcrdDescrip hidden">
+							
+							&nbsp; Photography &nbsp; &nbsp;
+							
+							
+						</div>
+					
+					</div>
+					
+					<!--4-->
+					<div class="crpAcrdWrap"> 
+					
+						<div id="4_crpAcrd" class="crpAcrdItem">
+							
+							<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101935604474997094179%2Falbumid%2F5954720610626221297%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+							
+						</div>
+						
+						<div class="crpAcrdDescrip hidden">
+							
+							&nbsp; Character Designs &nbsp; &nbsp;
+							
+						</div>
+					
+					</div>
+				
+				</div> <!--END crpAcrd-->
+			
+			</div> <!--END #viz-->
+				
+			<!--soundcloud iframe | #audio redirects-->
+			<div id="audio" class="center hidden content">
+				
+					<iframe width="850" height="410" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/15676788&amp;color=b0bb9b&amp;auto_play=false&amp;show_artwork=true">
+						
+					</iframe>	
+					
+			</div> <!--END #audio-->
+			
+			<!--multivideo player, the "playlister" | #video redirects-->
+			<div id="video" class="center hidden content">
+					
+					<div id="playlister">
+						
+						<div id="videos"> 
+							
+							<div id="0_playlister" class="vidja">
+
+								<iframe width="640" height="360" src="//www.youtube.com/embed/Eukq8mGypQg" frameborder="0" allowfullscreen></iframe>
+												
+							</div>
+							
+							<div id="1_playlister" class="vidja hidden">
+
+								<iframe width="640" height="360" src="//www.youtube.com/embed/y1Y1ClAtYe4" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+							
+							<div id="2_playlister" class="vidja hidden">
+
+								<iframe src="//player.vimeo.com/video/66217072" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>	
+								
+							</div>
+							
+							<div id="3_playlister" class="vidja hidden">
+
+								<iframe width="640" height="360" src="//www.youtube.com/embed/2VYRjHPmZdQ" frameborder="0" allowfullscreen> </iframe>
+								
+							</div>
+							
+							<div id="4_playlister" class="vidja hidden">
+
+								<video width="640" height="360" controls> 
+									<source src="assets/video/ncfom_score.mp4" type="video/mp4">  
+									<source src="assets/video/ncfom_score.ogv" type="video/ogg"> 
+									Your Browser doesn't support HTML5 Vidja 
+								</video>
+
+							</div>
+							
+							<div id="5_playlister" class="vidja hidden">
+
+								<iframe width="640" height="360" src="//www.youtube.com/embed/7FRDgyRmcxk" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+							
+						</div> <!--END videos-->
+						
+						<nav> 
+							
+							<div id="0_playlister_select" class="playlister_select activeVidja">
+								
+								A Bolt, A Bird - Teaser
+								
+							</div>
+							
+							<div id="1_playlister_select" class="playlister_select">
+								
+								Affairs Afloat - Latin Night
+
+							</div>
+							
+							<div id="2_playlister_select" class="playlister_select">
+								
+								VFX Reel
+								
+							</div>
+
+							<div id="3_playlister_select" class="playlister_select">
+								
+								TEDx Talk: Narrative Engineering
+								
+							</div>
+							
+							<div id="4_playlister_select" class="playlister_select">
+								
+								Spec Score: No Country for Old Men
+								
+							</div>
+
+							<div id="5_playlister_select" class="playlister_select">
+								
+								BE OK Vietnam
+								
+							</div>
+		
+						</nav> <!--END playlister_nav-->	
+								
+					</div> <!--END playlister-->
+								
+			</div> <!--END #video-->
+		
+			<!--web development redirect button array, currently a stand-in | #dev redirects-->
+			<div id="dev" class="center hidden content">
+				
+				<h2 class="center">Right now, da.niellacos.se is my most polished site to date.</h2>
+				
+				<p class="center"><em class="half-opacity">But as I move from project to project, I'll begin posting them here.</em> <br /><br />
+
+					A couple of things I'm currently toying around with: <a href="http://da.niellacos.se/textraptor/">da.niellacos.se/textraptor</a>, <a href="http://da.niellacos.se/blackbody/">da.niellacos.se/blackbody (calculator)</a><br /><br />
+					(and if you REALLY want to see my past work, check out <a href="http://www.narrus.com">narrus.com</a> or <a href="http://www.joppity.com">joppity.com</a>. Trust me though, they pale in comparison.) </p>
+					
+			</div> <!--END #dev-->
+			
+		</div>  <!--END activepage_content-->
+			
+	</section>	<!--END activepage-->
+
+	<!--taskbar that contains the main NAV elements-->
+	<footer>
+		
+		<p id="tut" class="center footerFont"> CLICK TO EXPAND </p>
+
+		<!--copyright tag, fades in on footer collapse-->
+		<p id="copyright" class="center hidden footerFont"> &copy; 2013 | Daniel LaCosse | <span style="color:red;">ALPHA</span> </p>
+
+		
+
+		<!--footerNav-->
+		<nav id="footerNav" class="center hidden">
+			
+			<div class="tableWrap">  <!--Ideas & Essays (#ideas)-->
+					
+				<span class="center tableCenterWrap">
+					
+					<h3 class="hidden"> Ideas &amp; Essays </h3>
+					
+					<span id="ideatext" class="navElement circle bgfill centerVert spins">
+								
+						<span id="ideabutton" class="navButton circle bgfill bgsolid centerVert unspins">
+								
+						</span>	
+	
+					</span>
+					
+				</span>
+					
+			</div>
+				
+			<div class="tableWrap"> <!--Visual Art & Design (#viz)-->
+			 		
+			 	<span class="center tableCenterWrap">
+			 			
+				 	<h3 class="hidden"> Visual Art &amp; Design </h3>
+					
+					<span id="viztext" class="navElement circle bgfill centerVert spins">
+									
+						<span id="vizbutton" class="navButton circle bgfill bgsolid centerVert unspins">
+										
+						</span>
+									
+					</span>
+			 			
+			 	</span>
+			 		
+			 </div> 
+					
+			 <div class="tableWrap"> <!--Music & Audio (#audio)-->
+				
+				<span class="center tableCenterWrap">
+
+					<h3 class="hidden"> Music &amp; Audio </h3>
+						
+					<span id="audiotext" class="navElement circle bgfill centerVert spins">
+									
+						<span id="audiobutton" class="navButton circle bgfill bgsolid centerVert unspins">
+											
+						</span>
+									
+					</span>
+					
+				</span>
+					
+			 </div>
+			 	
+			<div class="tableWrap"> <!-- Film & VFX (#video)-->
+					
+				<span class="center tableCenterWrap">
+
+					<span id="videotext" class="navElement circle bgfill centerVert spins">	
+
+						<h3 class="hidden"> Film &amp; VFX </h3>
+									
+						<span id="videobutton" class="navButton circle bgfill bgsolid centerVert unspins">
+										
+						</span>
+									
+					</span>
+					
+				</span>
+					
+			</div>
+				
+			<div class="tableWrap"> <!-- web development (#dev)-->
+					
+				<span class="center tableCenterWrap">
+					
+					<h3 class="hidden"> Web Development </h3>
+								
+					<span id="devtext" class="navElement circle bgfill centerVert spins">
+									
+						<span id="devbutton" class="navButton circle bgfill bgsolid centerVert unspins">
+										
+						</span>
+									
+					</span>
+						
+				</span>
+					
+			</div>
+				
+		</nav> <!--END footerNav-->
+		
+	</footer>
+	
+	<!--custom scripts-->
+	<script src="scripts/anim.js"></script>
+	<script src="scripts/cropAccord.js"></script>
+	<script src="scripts/jqsiaf.js"></script>
+	<script src="scripts/lib.js"></script>
+
+</body>

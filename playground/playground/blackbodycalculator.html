@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<head>
+
+<title> Blackbody Calculator </title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+    /*body, html*/
+        body, html {
+
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #content-wrapper { width: 400px; }
+
+    /*canvas*/
+        canvas { border: 1px solid; }
+
+    /*input*/
+        input { outline: none; }
+
+        input[type="range"] {
+
+            -webkit-appearance: none;
+            -moz-apperance: none;
+            appearance: none;
+
+            background-color: transparent;
+
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+
+            -webkit-appearance: none;
+            -moz-apperance: none;
+            appearance: none;
+
+            background-color: transparent;
+
+        }
+
+        #calRadSlider {
+
+            position: relative;
+
+            right: 6px;
+            bottom: 15px;
+
+            width: 410px;
+
+        }
+
+        #temperatureSlider {
+
+            position: relative;
+
+            right: 190px;
+            bottom: 196px;
+
+            width: 302px;
+            height: 20px;
+
+            background-color: red;
+
+            opacity: 0.5;
+
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+
+        }
+
+        #temperatureSlider:active {
+
+            right: 200px;
+
+            opacity: 1;
+
+        }
+
+        #calRadSlider::-webkit-slider-thumb,
+        #temperatureSlider::-webkit-slider-thumb {
+
+            width: 9px;
+            height: 20px;
+
+            background-color: white;
+            border: 2px solid black;
+
+        }
+
+        #calRadSlider::-webkit-slider-thumb { cursor: w-resize; }
+        #temperatureSlider::-webkit-slider-thumb { cursor: n-resize; }
+
+    /*paragraph*/
+        p { 
+
+        margin: 0;
+
+        font: 21pt arial bold;
+
+        }
+
+        #tempP {
+
+            color: red;
+        }
+
+
+    /*generic classes*/
+        .rotate {  
+
+        -webkit-transform: rotate( 90deg );
+        -moz-transform: rotate( 90deg );
+        -ms-transform: rotate( 90deg );
+        -o-transform: rotate( 90deg );
+        transform: rotate( 90deg );
+
+        }
+
+        .rotateCCW {  
+
+        -webkit-transform: rotate( -90deg );
+        -moz-transform: rotate( -90deg );
+        -ms-transform: rotate( -90deg );
+        -o-transform: rotate( -90deg );
+        transform: rotate( -90deg );
+
+        }
+
+        .hidden { display: none; }
+
+        /* place on child element to horizontally center in parent */
+        .center { 
+
+          display: block;
+          margin: 0 auto; 
+
+        }
+
+        /* place on parent element to perfectly center children */
+        .centerVert {
+
+                    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+                    display: -moz-box;      /* OLD: Firefox (buggy) */ 
+                    display: -ms-flexbox;   /* MID: IE 10 */
+                    display: -webkit-flex;  /* NEW, Chrome 21+ */
+                    display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+
+                    -webkit-box-align: center; 
+                    -moz-box-align: center; /* OLD… */
+                    -ms-box-align: center; /* OLD… */
+                    -ms-flex-align: center; /* You know the drill now… */
+                    -webkit-align-items: center;
+                    align-items: center;
+                        
+                    -webkit-box-pack: center; 
+                    -moz-box-pack: center;
+                    -ms-box-pack: center;
+                    -ms-flex-pack: center; 
+                    -webkit-justify-content: center;
+                    justify-content: center;
+
+                    margin: 0;
+                    height: 100%;
+                    width: 100% /* needed for Firefox */
+
+                }
+
+    </style>
+
+</head>
+
+<body> 
+
+    <!--HIDDEN-->
+    <form name="calc" id="calc" class='hidden'>
+
+        <input type="field" name="Kelvin" id="kelvin">
+        <label for="kelvin">Temperature (K)</label>
+        <br /><br />
+
+        <input type="field" name="wavelength" id="wavelength">
+        <label for="wavelength">Wavelength (nm)</label> 
+        <br /><br />
+
+        <input type="button" name="submit" id="submit" onclick="calculateRadiancy();" value="Calculate">
+
+    </form>
+
+    <!--HIDDEN-->
+    <form name="calc2" id="calc2" class='hidden'>
+
+        <input type="field" name="Kelvin2" id="kelvin2">
+        <label for="kelvin">Temperature (K)</label>
+        <br /><br />
+
+        <input type="field" name="lowerwavelength" id="lowerwavelength">
+        <label for="wavelength">Lower Wavelength (nm)</label> 
+        <br /><br />
+
+        <input type="field" name="upperwavelength" id="upperwavelength">
+        <label for="wavelength">Upper Wavelength (nm)</label> 
+        <br /><br />
+
+        <input type="button" name="submit2" id="submit2" onclick="calRadPcnt(document.getElementById("kelvin2").value, document.getElementById("lowerwavelength").value, document.getElementById("upperwavelength").value);" value="Calculate">
+
+    </form>
+
+    <div class='centerVert'>
+
+        <div id='content-wrapper'>  
+
+            <canvas id="spectraGraph"width="400" height="300">
+
+                Your browser doesn't support HTML5 canvas. :C
+
+            </canvas>
+
+            <form>
+
+                <input type="range" id="calRadSlider" name="calRadSlider" min="0" value="0">
+
+                <input type="range" id="temperatureSlider" name="temperatureSlider" class="rotateCCW" min="2000" max="6500" value="2000">
+
+                <!--HIDDEN-->
+                <input type="button" id="rotateButton" name="rotateButton" class="hidden" value="Rotate">
+
+            </form>
+
+            <p id="tempP">Temperature (K)</p> <p id="wavelengthP">Wavelength (nm)</p>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        // important universal constants
+        var planck, boltzmann, spdOfLight;
+
+            planck = 6.62606957e-16; // kg * nm^2 * s^-1
+            boltzmann = 1.3806488e-5; // kg * nm^2 * s^-2 * K^-1
+            spdOfLight = 299792458e9; // nm/s
+             
+        // public variables for canvasObj
+        var spectraGraph = document.getElementById("spectraGraph");
+        var ctx = spectraGraph.getContext("2d");
+        var spectraGradient = ctx.createLinearGradient(0, 0, spectraGraph.width, 0);
+
+        // adjust these to set what you can see on the x and y axes, respectively
+        var wlScale, srScale;
+
+            wlScale = 2000;
+            srScale = 50;
+
+        //toy function (version that passes parameters is next)
+        function calculateRadiancy() {
+
+            var constantFactor = 2 * planck * Math.pow(spdOfLight, 2);
+
+            var Temp = document.getElementById("kelvin").value;
+            var WveLngth = document.getElementById("wavelength").value;
+
+            // console.log("Entered Temperature and Wavelength;")
+            // console.log(Temp);
+            // console.log(WveLngth);
+            // console.log("---");
+
+            // console.log("Constants;")
+            // console.log(planck, boltzmann, spdOfLight);
+            // console.log(constantFactor);
+            // console.log("---");
+
+            // console.log("Wavelength ^ 5;")
+            // console.log(Math.pow(WveLngth, 5));
+            // console.log("---");
+
+            // console.log("Constants * Wavelength ^ 5;")
+            // console.log(constantFactor / Math.pow(WveLngth, 5));
+            // console.log("---");
+
+            // console.log("Calculating e^ stuff;")
+            // console.log(planck * spdOfLight);
+            // console.log(WveLngth * boltzmann * Temp);
+            // console.log((planck * spdOfLight)/(WveLngth * boltzmann * Temp));
+            // console.log(Math.exp((planck * spdOfLight)/(WveLngth * boltzmann * Temp)));
+            // console.log("---");
+
+            // console.log("Bringing it all together;")
+            // console.log(1/(Math.exp((planck * spdOfLight)/(WveLngth * boltzmann * Temp))-1));
+            // console.log(((constantFactor / Math.pow(WveLngth, 5)) * 1/(Math.exp((planck * spdOfLight)/(WveLngth * boltzmann * Temp))-1))/1000);
+            // console.log("---");
+
+            alert("Spectral Radiance = " + ((constantFactor / Math.pow(WveLngth, 5)) * 1/(Math.exp((planck * spdOfLight)/(WveLngth * boltzmann * Temp))-1))/1000);
+
+        }
+
+        // calRad is identical to the CalculateRadiancy except it passes parameters 
+        // (Also, only the answer is logged to the console)
+        function calRad( Temp, WveLngth ) {
+
+            var constantFactor = 2 * planck * Math.pow(spdOfLight, 2);
+            var resultant = (constantFactor / Math.pow(WveLngth, 5)) * 1/(Math.exp((planck * spdOfLight)/(WveLngth * boltzmann * Temp))-1)/1000;
+
+            //console.log(resultant);
+
+            return resultant;
+
+        }
+
+        //uses Wien's Approximation law to figure out peak wavelength
+        function calRadMax( Temp ) { return ( 2.898e6 / Temp ); }
+
+        // stefan-boltzmann -- area under the current radiancy curve
+        function stefBoltz( Temp ) {
+
+            console.log("Temperature to the 4th power;");
+            console.log(Math.pow(Temp, 4));
+            console.log ("---");
+
+            console.log((Math.pow(Temp, 4) * 5.6704e-8)/Math.PI);
+            return ((Math.pow(Temp, 4) * 5.6704e-8)/(Math.PI * 1000));
+
+        }
+
+        //uses stefBoltz() to approximate the percentage of the curve a range of wavelengths take up
+        function calRadPcnt ( Temp, WveLngthLwr, WveLngthUpr ) {
+
+            var trapInteg = calRad(Temp, WveLngthLwr);
+
+            for (var i = (WveLngthUpr - WveLngthLwr - 1); i > 0; i--) trapInteg += calRad(Temp, (WveLngthUpr - i));
+
+            return ((trapInteg * 0.5) / stefBoltz(Temp) * 100);
+
+        }
+
+        //gets canvas context and sets origin to bottom left
+        function setCanvas(){
+
+            ctx = spectraGraph.getContext("2d");
+
+            if (ctx !== null) {
+
+            //sets origin to the bottom left corner
+            ctx.translate(0, spectraGraph.height);
+            ctx.translate(0.5, 0.5);
+            ctx.webkitImageSmoothingEnabled = true;
+            ctx.mozImageSmoothingEnabled = true;
+
+            };
+
+            spectraGradient.addColorStop(0, "gray");
+            spectraGradient.addColorStop((400 / wlScale), "gray");
+            spectraGradient.addColorStop((401 / wlScale), "purple");
+            spectraGradient.addColorStop((470 / wlScale), "blue");
+            spectraGradient.addColorStop((490 / wlScale), "cyan");
+            spectraGradient.addColorStop((510 / wlScale), "green");
+            spectraGradient.addColorStop((570 / wlScale), "yellow");
+            spectraGradient.addColorStop((590 / wlScale), "orange");
+            spectraGradient.addColorStop((650 / wlScale), "red");
+            spectraGradient.addColorStop((700 / wlScale), "gray");
+            spectraGradient.addColorStop(1, "gray");
+
+        }
+
+        // WARNING! -- assumes origin of canvas is bottom left
+        function scale( val, scaleFrom, scaleTo ) { return ((val/scaleFrom) * scaleTo); }
+                
+        //proprietary canvas update for user change in Temperature
+        function updateTempToCanvas(){
+
+            ctx = spectraGraph.getContext("2d");
+
+            var Temp = document.getElementById("temperatureSlider").value;
+            var specRad;
+
+            if (ctx !== null) {
+
+                ctx.save();
+                ctx.clearRect(0, 0, spectraGraph.width, -spectraGraph.height);
+
+                ctx.beginPath();
+                ctx.lineTo(0, 0);
+
+                for (var i = 0; i < spectraGraph.width + 1; i++) {
+
+                    specRad = calRad(Temp, scale(i, spectraGraph.width, wlScale));
+                    ctx.lineTo(i, -scale(specRad, srScale, spectraGraph.height));
+
+                }
+
+                ctx.lineTo(spectraGraph.width, 0);
+                ctx.closePath();
+                ctx.clip();
+
+                ctx.fillStyle = spectraGradient;
+                ctx.fillRect(0, 0, spectraGraph.width, -spectraGraph.height);
+                ctx.restore();
+
+            } // if statement ends
+
+        }
+
+        function updateTempToP() {
+
+            document.getElementById("tempP").innerHTML = document.getElementById("temperatureSlider").value + " K";
+
+            document.getElementById("wavelengthP").innerHTML += " (max)"
+
+
+        }
+
+        function updateWveLngthMaxToCanvas() {
+
+            var WveLngth = document.getElementById("calRadSlider").value;
+            ctx = spectraGraph.getContext("2d");
+
+            console.log(WveLngth);
+
+            ctx.save();
+            ctx.beginPath();
+
+            ctx.moveTo( scale(WveLngth, wlScale, spectraGraph.width), 0 );
+        
+            ctx.lineTo( scale(WveLngth, wlScale, spectraGraph.width), -(scale(calRad(document.getElementById("temperatureSlider").value, WveLngth), srScale, spectraGraph.height)));
+
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = '#ffffff';
+
+            ctx.stroke();
+            ctx.restore();
+
+        }
+
+        function updateWveLngthToP() {
+
+            document.getElementById("wavelengthP").innerHTML = document.getElementById("calRadSlider").value + " nm";
+
+        }
+
+        //siaf
+        $( function () {
+
+            setCanvas();
+            document.getElementById('calRadSlider').max = wlScale;
+
+            // calls updateTempToCanvas() on slider change, sets & draws line for lambda peak
+            $( "#temperatureSlider" ).on( "change", function () {
+
+                updateTempToCanvas();
+                
+
+                document.getElementById('calRadSlider').value = calRadMax( document.getElementById('temperatureSlider').value );
+
+                updateWveLngthMaxToCanvas();
+                updateWveLngthToP();
+                updateTempToP();
+
+            });
+
+            // calls updateWveLngthMaxToCanvas();
+            $( '#calRadSlider' ).on( 'change', function () {
+
+                updateTempToCanvas();
+                updateWveLngthMaxToCanvas();
+                updateWveLngthToP();
+
+            });
+
+            // toggles .rotate on button click
+            $( "#rotateButton" ).on( "click", function () {
+
+                var $graph = $("#spectraGraph");
+
+                if ( !($graph.hasClass("rotate")) ) {
+
+                    $graph.addClass("rotate");
+
+                } else {
+
+                    $graph.removeClass("rotate");
+
+                };
+
+            });
+
+        })();
+
+    </script>
+
+</body>

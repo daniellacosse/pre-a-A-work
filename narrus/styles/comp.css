@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+			
+	background-image: url(../assets/narrusbkg.jpg);
+	background-color: #D7FFE1;
+			
+}
+
+	
+@font-face {
+			
+	font-family: geoSans;
+	src: url(../assets/GeosansLight.ttf);
+		
+}
+
+.center {
+    
+    display: block;
+    margin: auto;
+    
+}
+
+.hidden {
+    
+    display: none;
+    
+}
+
+.hidden_comp {
+    
+    display: none;
+    
+}
+
+.padding {
+    
+    padding: 20px;
+}
+
+		
+.menuNav {
+		
+	color: #5FD2B7;
+	font-family: geoSans;
+	font-size: 72px;
+	text-align: center;
+	
+	width: 500px;
+				
+}
+		
+.menuContent {
+			
+	width: 500px;
+	padding: 15px;
+			
+}
+
+#contactTable {
+			
+	width: 600px;
+	padding: 15px;
+			
+}
+		
+#logo {
+    
+    position: relative; 
+    top: 25px;
+    
+}
+
+#email {
+    
+    width: 406px;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #AAAAAA;
+    
+    /*fallback*/
+    background-color: white; 
+
+    /*cross-browser support*/
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#DDDDDD));
+    background-image: -webkit-linear-gradient(top, white, #DDDDDD); 
+    background-image: -moz-linear-gradient(top, white, #DDDDDD);
+    background-image: -ms-linear-gradient(top, white, #DDDDDD);
+    background-image: -o-linear-gradient(top, white, #DDDDDD);
+    
+}
+
+#submit {
+    
+    color: white;
+    background-color: #18909D;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    
+    cursor: pointer;
+    
+}
+
+#submit:hover { background-color: #68CFCC; }
+
+header { width: 800px; }
+
+dl, dt, dd { margin: 0; }
+
+dd {
+			
+	color: #18909D;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: justify;
+	line-height: 150%;	
+			
+}	
+		
+dt { cursor: pointer; }
+
+a { text-decoration: none; }
+
+a:link { color: #68CFCC; }
+a:hover { color: #45716C; }
+a:active { color: black; }
+a:visted { color: black; }
+
+/* slideshow styling*/
+
+
+#viewer { width: 900px; }
+
+#arrow_left {
+    
+    
+    position: relative;
+    cursor: pointer;
+    
+    float: left;
+    top: 250px;
+    
+}
+
+#arrow_right {
+    
+    position: relative;
+    cursor: pointer;
+    
+    float: right;
+    top: 250px;
+    
+}
+
+#slideshow {
+    position: relative;
+    height: 500px;
+    width: 700px;
+}
+
+#slideshow IMG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+#slideshow IMG.active {
+    z-index: 10;
+}
+
+#slideshow IMG.last-active {
+    z-index: 9;
+}

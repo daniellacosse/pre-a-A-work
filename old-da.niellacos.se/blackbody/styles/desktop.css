@@ -1,0 +1,86 @@
+/*generic classes*/
+.rotate {  
+
+    -webkit-transform: rotate( 90deg );
+    -moz-transform: rotate( 90deg );
+    -ms-transform: rotate( 90deg );
+    -o-transform: rotate( 90deg );
+    transform: rotate( 90deg );
+
+}
+
+.rotateCCW {  
+
+    -webkit-transform: rotate( -90deg );
+    -moz-transform: rotate( -90deg );
+    -ms-transform: rotate( -90deg );
+    -o-transform: rotate( -90deg );
+    transform: rotate( -90deg );
+
+}
+
+.hidden { display: none; }
+
+.center { /* place on child element to horizontally center in parent */
+
+  display: block;
+  margin: 0 auto; 
+
+}
+
+.centerVert { /* place on parent element to perfectly center children */
+
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */ 
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21+ */
+    display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+
+    -webkit-box-align: center; 
+    -moz-box-align: center; /* OLD… */
+    -ms-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+                
+    -webkit-box-pack: center; 
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -ms-flex-pack: center; 
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    margin: 0;
+    height: 100%;
+    width: 100%; /* needed for Firefox */
+
+}
+
+/*body, html, content*/
+body, html {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#content-wrapper { width: 500px; position: relative; }
+
+/*canvas*/
+canvas { border: 1px solid; }
+
+/*input*/
+input { outline: none; }
+
+/*paragraph*/
+p { 
+
+    margin: 0;
+
+    font: 21pt arial bold;
+
+}
+
+#tempP { color: red; }

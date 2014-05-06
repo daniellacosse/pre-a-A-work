@@ -1,0 +1,92 @@
+    body {
+        
+        background-color: #D2AA3F;
+        background-image: url(../assets/joppitybkg.png); 
+            
+        text-align: justify;
+        text-justify: inter-word;   
+        
+    }
+    
+    .center {
+        
+        display: block;
+        margin: auto;
+        
+    /*Adjusts width of center*/
+       
+        
+    }
+    
+    .padding { 
+        
+        width: 700px;
+        padding: 15px; 
+        
+    }
+    
+    #body {
+        
+        color: black;
+        font: 12pt "Helvetica";
+        background-color: #FFFFCC;
+        border-radius: 10px;
+        
+        box-shadow: 0px 0px 0px 2pt black;
+
+        white-space: normal;
+
+        position: relative;
+        bottom: 20px;
+    
+       
+    }
+    
+    div#header {
+        
+        position:absolute; 
+        top: 0px;
+        
+    }
+    
+    span#nav {
+        
+        font: bold 16pt "Helvetica";
+        text-align: center;
+        white-space: nowrap;
+        
+    }
+    
+    a:hover, a:visited, a:link, a:active { text-decoration: none; }
+    a:link, a:visited { color: #BB2229; }
+    a:hover, a:active { color: black; }
+    
+    input {
+        
+        width: 200px;
+        height: 50px;
+        
+        cursor: pointer;
+        
+        position: relative;
+        right: 35px;
+        top: 35px;
+        
+        border-radius: 10px;
+        border-width: 0px;
+        
+        color: white;
+        background-color: #ce2b12;
+        
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        
+        font-size: 16px;
+        
+    }
+    
+    input:hover {
+        
+        background-color: #75170a;
+        
+    }

@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+      <title>INFINITEIDEA</title>
+  
+  <!--META/LINK-->
+  <meta name="title" content="INFINITEIDEA" />
+  <META http-equiv="Pragma" content="no-cache">
+  <META HTTP-EQUIV="Expires" CONTENT="-1">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="image_src" href="http://www.infiniteidea.net/images/thumb.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <meta property="fb:page_id" content="314211924992" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+  <link href="jquery-ui-1.9.2.custom/css/infinitetheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  
+  <!--SCRIPT-->
+  <!--RESOURCES-->
+  <script src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+  <script src="jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+  <script src="jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js"></script>
+  <script type="text/javascript">
+  
+
+		//if (screen.width <= 699) {
+		//document.location = "mobile.html";
+		//}
+
+	</script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12477991-2']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+  <script language="JavaScript1.2" type="text/javascript">
+
+//function MM_preloadImages() { //v3.0
+    //var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+      //var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+      //if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+ // }
+
+  </script>
+  
+  <script>
+          
+          $(function() {
+          $( "#accordion" ).accordion({
+              heightStyle: "fill"
+          });
+          
+          $(function() {
+          $( "#accordion-resizer" ).resizable({
+              minHeight: 650,
+              minWidth: 250,
+              resize: function() {
+                  $( "#accordion" ).accordion( "refresh" );
+              }
+          });
+      });
+          
+  
+          
+          var availableTags = [
+              "ActionScript",
+              "AppleScript",
+              "Asp",
+              "BASIC",
+              "C",
+              "C++",
+              "Clojure",
+              "COBOL",
+              "ColdFusion",
+              "Erlang",
+              "Fortran",
+              "Groovy",
+              "Haskell",
+              "Java",
+              "JavaScript",
+              "Lisp",
+              "Perl",
+              "PHP",
+              "Python",
+              "Ruby",
+              "Scala",
+
+              "Scheme"
+          ];
+          $( "#autocomplete" ).autocomplete({
+              source: availableTags
+          });
+          
+  
+          
+          
+          
+          
+          $( "#radioset" ).buttonset();
+          
+  
+          
+          $( "#tabs" ).tabs();
+          
+  
+          
+          $( "#dialog" ).dialog({
+              autoOpen: false,
+              width: 400,
+              buttons: [
+                  {
+                      text: "Ok",
+                      click: function() {
+                          $( this ).dialog( "close" );
+                      }
+                  },
+                  {
+                      text: "Cancel",
+                      click: function() {
+                          $( this ).dialog( "close" );
+                      }
+                  }
+              ]
+          });
+  
+          // Link to open the dialog
+          $( "#dialog-link" ).click(function( event ) {
+              $( "#dialog" ).dialog( "open" );
+              event.preventDefault();
+          });
+          
+          $(function() {
+                  $( "#menu" ).menu();
+          });
+          
+          $( "#datepicker" ).datepicker({
+              inline: true
+          });
+          
+  
+          
+          $( "#slider" ).slider({
+              range: true,
+              values: [ 17, 67 ]
+          });
+          
+  
+          
+          $( "#progressbar" ).progressbar({
+              value: 20
+          });
+          
+  
+          // Hover states on the static widgets
+          $( "#dialog-link, #icons li" ).hover(
+              function() {
+                  $( this ).addClass( "ui-state-hover" );
+              },
+              function() {
+                  $( this ).removeClass( "ui-state-hover" );
+              }
+          );
+      });
+  </script>
+          
+  <!--CSS-->        
+  <style>
+  
+      body{
+          font: 30% "Trebuchet MS", sans-serif;
+          margin: 0px;
+      }
+      .demoHeaders {
+          margin-top: 2em;
+      }
+      #dialog-link {
+          padding: .4em 1em .4em 20px;
+          text-decoration: none;
+          position: relative;
+      }
+      #dialog-link span.ui-icon {
+          margin: 0 5px 0 0;
+          position: absolute;
+          left: .2em;
+          top: 50%;
+          margin-top: -8px;
+      }
+      #icons {
+          margin: 0;
+          padding: 0;
+      }
+      #icons li {
+          margin: 2px;
+          position: relative;
+          padding: 4px 0;
+          cursor: pointer;
+          float: left;
+          list-style: none;
+      }
+      #icons span.ui-icon {
+          float: left;
+          margin: 0 4px;
+      }
+      
+  </style>
+      
+  <style type="text/css">
+  
+      td img {display: block;}
+      body {
+          background-image: url(background.png);
+          background-repeat: no-repeat;
+          margin-left: 0px;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 0px;
+          background-color: #545557;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 10px;
+          overflow-y: scroll;
+          overflow-x: hidden;
+      }
+      
+      body,td,th {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          color: #FFF;
+          float: none;
+          
+          white-space: normal;
+      }
+      a:link {
+          color: #CCC;
+          text-decoration: underline;
+      }
+      a:visited {
+          text-decoration: underline;
+          color: #FFF;
+      }
+      a:hover {
+          text-decoration: none;
+          color: #666;
+      }
+      a:active {
+          text-decoration: underline;
+          color: #FFF;
+      }
+      #container{
+                  text-align: justify;
+                  width: 95%;
+                  margin: 10px auto;
+                  padding: 0px;
+      }
+      
+      html {
+      overflow-y: auto;
+      background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      }
+      
+      ::-webkit-scrollbar-button:start:decrement,
+      ::-webkit-scrollbar-button:end:increment  {
+      height: 30px;
+      /*display: block;*/
+      background-color: #545557;
+      }
+      
+      ::-webkit-scrollbar-track-piece  {
+      background-color: #3b3b3b;
+      -webkit-border-radius: 0px;
+      }
+      
+      ::-webkit-scrollbar-thumb:vertical {
+      height: 50px;
+      background-color: #666;
+      -webkit-border-radius: 0px;
+      }
+  
+  </style>
+
+</head>
+
+  <!--BODY-->
+<body style="overflow:hidden;" scrolling="no">
+  
+  <base target="main" />
+  
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
+ 	<!--MAIN TABLE BEGIN-->
+  
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  
+  	<!--BACKGROUND SPACER-->
+  
+    <td width="8%">&nbsp;</td>
+    
+ 	<!--IFRAME--> 
+    
+    <td width="79%"><iframe name="main" scrolling="auto" height="100%" width="100%" frameborder=0 allowtransparency="true" src="http://ideeinfinie.blogspot.com/"></iframe></td>
+ 
+ 	<!--SPACER-->
+   
+    <td width="1%">&nbsp;</td>
+    
+    <!--NAVIGATION-->
+    
+    <td width="12%" valign="top" halign="center">
+        
+                    <table border="0" cellpadding="0" cellspacing="0">
+            <!-- fwtable fwsrc="tabsdefault.png" fwpage="Page 1" fwbase="tabsdefault.png" fwstyle="Dreamweaver" fwdocid = "641175183" fwnested="0" -->
+            <tr>
+              <td width="79"><img src="spacer.gif" width="79" height="1" border="0" alt="" /></td>
+              <td width="62"><img src="spacer.gif" width="62" height="1" border="0" alt="" /></td>
+              <td width="62"><img src="spacer.gif" width="62" height="1" border="0" alt="" /></td>
+              <td width="62"><img src="spacer.gif" width="62" height="1" border="0" alt="" /></td>
+              <td width="10"><img src="spacer.gif" width="1" height="1" border="0" alt="" /></td>
+            </tr>
+            
+            <tr>
+              <td colspan="5"><img name="tabsdefault_r1_c1" src="imagesv2.3/tabsdefault/tabsdefault_r1_c1.png" height="12" border="0" id="tabsdefault_r1_c1" alt="" /></td>
+              <td><img src="spacer.gif" width="1" height="12" border="0" alt="" /></td>
+            </tr>
+            
+            <!--ROLLOVER TABS-->
+            
+            <tr>
+              <td><a target="main"><img name="tabsdefault_r2_c1" src="imagesv2.3/tabsdefault/tabsdefault_r2_c1.png" width="79" height="100" border="0" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tabsdefault_r2_c1','','imagesv2.3/tabsrollover/tabsrollover_r2_c1.png',1);" id="tabsdefault_r2_c1" alt="" /></a></td>
+              <td><a target="main" href="http://vimeo.com/couchmode/infiniteidea/videos" ><img name="tabsdefault_r2_c2" src="imagesv2.3/tabsdefault/tabsdefault_r2_c2.png" width="62" height="100" border="0" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tabsdefault_r2_c2','','imagesv2.3/tabsrollover/tabsrollover_r2_c2.png',1);" id="tabsdefault_r2_c2" alt="" /></a></td>
+              <td><a target="main" href="proxysoundcloud.html" ><img name="tabsdefault_r2_c3" src="imagesv2.3/tabsdefault/tabsdefault_r2_c3.png" width="62" height="100" border="0" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tabsdefault_r2_c3','','imagesv2.3/tabsrollover/tabsrollover_r2_c3.png',1);" id="tabsdefault_r2_c3" alt="" /></a></td>
+              <td><a target="main" href="http://justsitback.deviantart.com/?title=INFINITE-IDEA's%20Gallery&amp;rssQuery=sort%3Atime%20gallery%3Ainfinite-idea"><img name="tabsdefault_r2_c4" src="imagesv2.3/tabsdefault/tabsdefault_r2_c4.png" width="62" height="100" border="0" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tabsdefault_r2_c4','','imagesv2.3/tabsrollover/tabsrollover_r2_c4.png',1);" id="tabsdefault_r2_c4" alt="" /></a>
+                  </td>       
+              <td><img src="spacer.gif" width="1" height="100" border="0" alt="" /></td>
+            </tr>
+        </table>
+                  
+        <br />
+        
+        <!--MENU-->
+        
+        <table width="100%" height="545px" border="0" cellspacing="0" cellpadding="0">
+          
+          <tr>
+            <td>
+              <div id="accordion"> 
+              
+                <h3>@EDIETINIFNI</h3>
+                  
+          <div>
+              <center><img src="images/spacer.gif" width="1" height="18" />
+              <a class="twitter-timeline" href="https://twitter.com/EDIETINIFNI" data-widget-id="297534218517487616">Tweets by @EDIETINIFNI</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></center>
+			</div>     
+
+          		<h3>Share</h3>
+         
+          <div>
+          
+      	<br />
+        
+      <font color="#999999" size="-2">Social - </font><br /><br />
+      <table border="0" align="center" cellpadding="4" cellspacing="0">
+        <tr>
+          <td><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FInfiniteidea%2F314211924992&amp;send=false&amp;layout=button_count&amp;width=88&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:88px; height:21px;" allowTransparency="true"></iframe></td>
+           <td><g:plusone></g:plusone></td>
+        </tr>
+       
+        <tr>
+      <td>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="This site is pretty cool, I guess" data-via="INFINITE_IDEA">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </td>
+      
+      <td>
+      <a href="http://www.tumblr.com/share/photo?source=<?php echo urlencode(INSERT_SOURCE_HERE) ?>&caption=<?php echo urlencode(INSERT_CAPTION_HERE) ?>&clickthru=<?php echo urlencode(INSERT_CLICK_THRU_HERE) ?>" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+      </td>
+     	 </tr>
+        
+        <tr>
+          <td height="38">
+           <a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
+          </td>
+          
+          <td>
+           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+      " />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+          </td>  
+        </tr>    
+      </table>
+      
+      <!--'FRIENDS'-->
+      
+      <!--<br />
+      
+                <font color="#999999" size="-2">Friends - </font><br /><br />
+                <center><table border="0" cellspacing="0" cellpadding="3">
+                  <tr>
+                    <td align="center"><a href="http://www.smackjeeves.com/comicprofile.php?id=79909"><img src="imagesv2.1/icons/ICON.png" alt="" width="32" height="16" border="0" /></a></td>
+                    <td align="center"><a href="http://thisisartinprogress.blogspot.com/"><img src="imagesv2.1/icons/TiAiP.png" alt="" width="26" height="15" border="0" /></a></td>
+                    <td align="center"><a href="http://soundslikeeffort.com/blog"><img src="imagesv2.1/icons/SLE.png" alt="" width="32" height="16" border="0" /></a></td>
+                  </tr>
+                </table></center>-->
+                
+          		<br />           
+                <font color="#999999" size="-2">Miscellaneous pages- </font><br /><br />
+     
+                  <table border="0" align="center" cellpadding="3" cellspacing="0">
+                              <tr>
+                                <td align="center"><a href="http://www.facebook.com/pages/Infinite-Idea/314211924992"><img src="imagesv2.1/icons/facebook.png" alt="" width="16" height="16" border="0" /></a></td>
+                                <td align="center"><a target="main" href="http://infinite-idea.tumblr.com/"><img src="imagesv2.1/icons/Tumblr.png" alt="" width="16" height="16" border="0" /></a></td>
+                                <td align="center"><a href="http://www.linkedin.com/in/infiniteidea"><img src="imagesv2.1/icons/LinkedIn.png" alt="" width="16" height="16" border="0" /></a></td>
+                                <td align="center"><a href="http://www.youtube.com/user/futureruler1?ob=0&amp;feature=results_main"><img src="imagesv2.1/icons/YouTube.png" alt="" width="16" height="16" border="0" /></a></td>
+                                <td align="center"><a target="main" href="http://cheezburger.com/futureruler"><img src="imagesv2.1/icons/Cheezburger.png" alt="" width="16" height="16" border="0" /></a></td>
+                                <td align="center"><a target="main" href="http://steamcommunity.com/id/futureruler"><img src="imagesv2.1/icons/Steam.png" alt="" width="16" height="16" border="0" /></a></td>
+                            </tr>
+                          </table>
+       		</div>
+                
+                <h3>About</h3>
+                  
+          <div>
+               <br />
+                <font color="#999999" size="-2"> Mission Statement - <br/> <br/> &nbsp; &nbsp; &nbsp; &nbsp;The 'INFINITEIDEA' is not so much a promise for an infinite number of ideas, but rather, a concept. This site is in omage to the concept of the 'Infiniteidea' - the fact that ideas are plentiful and innumerable. The correct form of the site name is 'Infiniteidea', without the underscore - unfortunately sometimes I am forced to demarkate a space to distinguish myself from some bot or long-abandoned and hardly used account, so just bear in mind that 'Infiniteidea' is the true form. <br /><br /> 
+                Site Build v2.4 &#183; <a href="mailto:d@niellacos.se">d@niellacos.se</a> &#183; (919) 323-7416 &#183; <a target="main" href="oldsite/site/home.html">Legacy</a></font>
+          </div>
+                
+            </td> 
+          </tr>
+        </table>
+        <!--END Navb Table-->  
+        
+    </td>
+  </tr>
+</table>
+  <!--END Main Table-->    
+              
+</body>
+</html>
