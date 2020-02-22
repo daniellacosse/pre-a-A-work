@@ -1,4 +1,5 @@
 var newState = {
   phong: "So cool",
-  daniel: "Likes final fantasy"
+  daniel: "Likes final fantasy",
+  Roen: "Eats food"
 };
